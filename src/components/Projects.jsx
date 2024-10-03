@@ -1,7 +1,7 @@
 import React from "react";
 import GithubIcon from "../assets/icons/GithubIcon";
 import HeroButton from "./Hero/HeroButton";
-import Project from "./Projects/Project";
+import ProjectsCarousel from "./Projects/ProjectsCarousel";
 
 const Projects = () => {
   const projects = [
@@ -21,35 +21,31 @@ const Projects = () => {
       img: "src/assets/img/react-components.png",
       title: "Ejercicio Componentes React",
       desc: "Actividad en clase: un primer acercamiento a componentes de React para la creación de una página web sencilla.",
-      href: "https://github.com/juanmayorquin/ejercicio-componentes-react"
+      href: "https://github.com/juanmayorquin/ejercicio-componentes-react",
     },
     {
       img: "src/assets/img/carreer-information.png",
       title: "Información sobre ingeniería multimedia",
       desc: "Actividad en clase: un primer acercamiento a HTML y CSS para la creación de una página web sencilla.",
-      href: "https://github.com/juanmayorquin/prueba-demw"
+      href: "https://github.com/juanmayorquin/prueba-demw",
     },
     {
       img: "src/assets/img/comparator.png",
       title: "Comparador",
       desc: "Actividad de clase: una página web que compara dos números, creada con HTML y JavaScript.",
-      href: "https://github.com/juanmayorquin/demw-clase-8"
+      href: "https://github.com/juanmayorquin/demw-clase-8",
     },
     {
       img: "src/assets/img/royal-rush.png",
       title: "Royal Rush",
       desc: "Proyecto de clase: Videojuego creado con Unity y C# para la asignatura de Computación Gráfica.",
-      href: "https://github.com/juanmayorquin/breakfast-rush"
+      href: "https://github.com/juanmayorquin/breakfast-rush",
     },
   ];
   return (
     <section id="Proyectos" className="px-5 pt-12 md:py-6 md:px-16">
-      <h2 className="font-bold text-4xl text-center mb-10">Mis proyectos</h2>
-      <div className="grid grid-cols-3 gap-8">
-        {projects.map((project, index) => (
-          <Project {...project} key={index} />
-        ))}
-      </div>
+      <h2 className="font-bold text-3xl md:text-4xl text-center mb-10">Mis proyectos</h2>
+      <ProjectsCarousel projects={projects} />
     </section>
   );
 };

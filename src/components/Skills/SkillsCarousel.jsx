@@ -47,7 +47,7 @@ const SkillsCarousel = () => {
     },
   ];
   return (
-    <div className="flex gap-4 items-center h-60 overflow-x-auto space-x-4 no-scrollbar snap-x snap-proximity">
+    <div className="flex items-center overflow-x-auto space-x-4 no-scrollbar snap-x snap-mandatory">
       {skills.map((skill, index) => (
         <div className="" key={index}>
           <Skill {...skill} />

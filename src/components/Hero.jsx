@@ -7,10 +7,10 @@ import MailIcon from "../assets/icons/MailIcon";
 
 const Hero = () => {
   return (
-    <header id="Inicio" className="h-screen md:grid md:grid-cols-2 justify-center items-end m-auto px-5 py-20 md:px-16 ">
+    <header id="Inicio" className="h-screen flex md:grid md:grid-cols-2 justify-center items-end m-auto px-5 py-20 md:px-16 ">
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-3">
-          <p className="text-2xl">Hola,</p>
+          <p className="text-lg md:text-2xl">Hola,</p>
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white">
             Soy <span className="bg-gradient-to-br from-purple-500 to-purple-800 bg-clip-text text-transparent">Juan </span>
             <br />
@@ -37,10 +37,12 @@ const Hero = () => {
             de plazos.
           </p>
         </div>
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-wrap gap-4">
           <HeroButton icon={<MailIcon />} text={"Contáctame"} href={"mailto:juan.mayorquin@uao.edu.co"} />
-          <HeroButton icon={<GithubIcon />} href={""}/>
-          <HeroButton icon={<LinkedinIcon />} href={""}/>
+          <div className="hidden md:flex gap-4">
+            <HeroButton icon={<GithubIcon />} href={""}/>
+            <HeroButton icon={<LinkedinIcon />} href={""}/>
+          </div>
         </div>
       </div>
     </header>
