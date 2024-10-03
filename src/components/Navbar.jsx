@@ -9,6 +9,8 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  
+
   return (
     <>
       <nav className="backdrop-blur-lg w-screen p-3 md:p-8 md:rounded-b-2xl md:drop-shadow-md fixed z-50">

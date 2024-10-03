@@ -40,8 +40,8 @@ const Hero = () => {
         <div className="flex flex-wrap gap-4">
           <HeroButton icon={<MailIcon />} text={"Contáctame"} href={"mailto:juan.mayorquin@uao.edu.co"} />
           <div className="hidden md:flex gap-4">
-            <HeroButton icon={<GithubIcon />} href={""}/>
-            <HeroButton icon={<LinkedinIcon />} href={""}/>
+            <HeroButton icon={<GithubIcon />} href={"https://www.github.com/juanmayorquin"}/>
+            <HeroButton icon={<LinkedinIcon />} href={"https://www.linkedin.com/in/juan-jos%C3%A9-mayorqu%C3%ADn-cabrera-09920b275/"}/>
           </div>
         </div>
       </div>
