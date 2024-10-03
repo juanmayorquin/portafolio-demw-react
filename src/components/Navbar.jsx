@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import NavbarButton from "./NavbarButton";
+import NavbarButton from "./Navbar/NavbarButton";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,7 +41,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <ul className="hidden md:flex space-x-8 text-xl">
+          <ul className="hidden md:flex space-x-8 justify-between text-xl">
             <NavbarButton name="Inicio" />
             <NavbarButton name="Habilidades" />
             <NavbarButton name="Proyectos" />

@@ -1,11 +1,11 @@
 import React from "react";
-import Skill from "./Skill";
-import BrushIcon from "../assets/BrushIcon.jsx";
-import ReactIcon from "../assets/ReactIcon.jsx";
-import MovieIcon from "../assets/MovieIcon.jsx";
-import GamepadIcon from "../assets/GamepadIcon.jsx";
-import BlenderIcon from "../assets/BlenderIcon.jsx";
-import HeadphonesIcon from "../assets/HeadphonesIcon.jsx";
+import Skill from "./Skill.jsx";
+import BrushIcon from "../../assets/BrushIcon.jsx";
+import ReactIcon from "../../assets/ReactIcon.jsx";
+import MovieIcon from "../../assets/MovieIcon.jsx";
+import GamepadIcon from "../../assets/GamepadIcon.jsx";
+import BlenderIcon from "../../assets/BlenderIcon.jsx";
+import HeadphonesIcon from "../../assets/HeadphonesIcon.jsx";
 
 const SkillsCarousel = () => {
   const skills = [
