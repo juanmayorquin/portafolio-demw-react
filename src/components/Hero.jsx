@@ -1,13 +1,13 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import HeroButton from "./Hero/HeroButton";
-import GithubIcon from "../assets/GithubIcon";
-import LinkedinIcon from "../assets/LinkedInIcon";
-import MailIcon from "../assets/MailIcon";
+import GithubIcon from "../assets/icons/GithubIcon";
+import LinkedinIcon from "../assets/icons/LinkedInIcon";
+import MailIcon from "../assets/icons/MailIcon";
 
 const Hero = () => {
   return (
-    <section id="Inicio" className="h-screen md:grid md:grid-cols-2 justify-center items-end m-auto px-5 py-20 md:px-16 ">
+    <header id="Inicio" className="h-screen md:grid md:grid-cols-2 justify-center items-end m-auto px-5 py-20 md:px-16 ">
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-3">
           <p className="text-2xl">Hola,</p>
@@ -43,7 +43,7 @@ const Hero = () => {
           <HeroButton icon={<LinkedinIcon />} href={""}/>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 

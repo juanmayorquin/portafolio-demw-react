@@ -12,7 +12,7 @@ const BlenderIcon = () => {
       strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-brand-blender w-full h-full"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-brand-blender w-full h-full text-orange-500"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 14m-6 0a6 5 0 1 0 12 0a6 5 0 1 0 -12 0" />

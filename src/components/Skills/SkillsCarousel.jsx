@@ -1,11 +1,11 @@
 import React from "react";
 import Skill from "./Skill.jsx";
-import BrushIcon from "../../assets/BrushIcon.jsx";
-import ReactIcon from "../../assets/ReactIcon.jsx";
-import MovieIcon from "../../assets/MovieIcon.jsx";
-import GamepadIcon from "../../assets/GamepadIcon.jsx";
-import BlenderIcon from "../../assets/BlenderIcon.jsx";
-import HeadphonesIcon from "../../assets/HeadphonesIcon.jsx";
+import BrushIcon from "../../assets/icons/BrushIcon.jsx";
+import ReactIcon from "../../assets/icons/ReactIcon.jsx";
+import MovieIcon from "../../assets/icons/MovieIcon.jsx";
+import GamepadIcon from "../../assets/icons/GamepadIcon.jsx";
+import BlenderIcon from "../../assets/icons/BlenderIcon.jsx";
+import HeadphonesIcon from "../../assets/icons/HeadphonesIcon.jsx";
 
 const SkillsCarousel = () => {
   const skills = [
@@ -47,9 +47,9 @@ const SkillsCarousel = () => {
     },
   ];
   return (
-    <div className="flex gap-60 overflow-x-auto space-x-4 no-scrollbar snap-x snap-proximity">
+    <div className="flex gap-4 items-center h-60 overflow-x-auto space-x-4 no-scrollbar snap-x snap-proximity">
       {skills.map((skill, index) => (
-        <div key={index} className="w-64">
+        <div className="" key={index}>
           <Skill {...skill} />
         </div>
       ))}

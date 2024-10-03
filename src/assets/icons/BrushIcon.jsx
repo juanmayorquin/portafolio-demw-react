@@ -12,7 +12,7 @@ const BrushIcon = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-brush w-full h-full"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-brush w-full h-full text-red-600"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 21v-4a4 4 0 1 1 4 4h-4" />
