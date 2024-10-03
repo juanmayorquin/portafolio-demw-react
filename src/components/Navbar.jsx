@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-gray-800 backdrop-blur-xl w-screen p-3 md:p-8 rounded-b-lg md:rounded-b-2xl md:drop-shadow-md fixed">
+      <nav className="backdrop-blur-lg w-screen p-3 md:p-8 md:rounded-b-2xl md:drop-shadow-md fixed z-50">
         <div className="mx-auto flex justify-between items-center">
           <div className="text-white text-xl md:text-3xl font-bold">
             Juan Mayorquín |
@@ -43,14 +43,14 @@ const Navbar = () => {
           </div>
           <ul className="hidden md:flex space-x-8 text-xl">
             <NavbarButton name="Inicio" />
-            <NavbarButton name="Sobre mí" />
+            <NavbarButton name="Habilidades" />
             <NavbarButton name="Proyectos" />
             <NavbarButton name="Contacto" />
           </ul>
           {isMenuOpen && (
-            <ul className="md:hidden absolute bg-gray-800 w-full left-0 top-12 space-y-4 p-4 rounded-b-lg">
+            <ul className="bg-gray-900 md:hidden absolute w-full left-0 top-[3.25rem] space-y-4 p-4 rounded-b-lg">
               <NavbarButton name="Inicio" />
-              <NavbarButton name="Sobre mí" />
+              <NavbarButton name="Habilidades" />
               <NavbarButton name="Proyectos" />
               <NavbarButton name="Contacto" />
             </ul>
