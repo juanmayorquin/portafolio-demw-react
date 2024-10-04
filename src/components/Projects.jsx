@@ -31,7 +31,7 @@ const Projects = () => {
       img: "/img/comparator.png",
       title: "Comparador",
       desc: "Actividad de clase: una página web que compara dos números, creada con HTML y JavaScript.",
-      href: "https://github.com/juanmayorquin/demw-clase-8",
+      href: "https://github.com/juanmayorquin/demw-clase8",
     },
     {
       img: "/img/royal-rush.png",

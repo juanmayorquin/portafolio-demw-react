@@ -4,7 +4,7 @@ import GithubIcon from "../../assets/icons/GithubIcon";
 
 const Project = ({ img, title, desc, href }) => {
   return (
-    <div className="m-4 w-[80vw] md:w-auto h-90 snap-center flex flex-col bg-gradient-to-br from-slate-900 to-gray-900 border-2 border-slate-900 transition-all shadow-md rounded-xl hover:scale-[1.02]">
+    <a href={href} target="_blank" className="m-4 w-[80vw] md:w-auto h-90 snap-center flex flex-col bg-gradient-to-br from-slate-900 to-gray-900 border-2 border-slate-900 transition-all shadow-md rounded-xl hover:scale-[1.02]">
       <img
         className=" rounded-t-xl object-cover min-h-40 max-h-48 w-full"
         src={img}
@@ -19,7 +19,7 @@ const Project = ({ img, title, desc, href }) => {
           <HeroButton icon={<GithubIcon />} href={href} />
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
